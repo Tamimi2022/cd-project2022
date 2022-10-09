@@ -25,6 +25,8 @@ jobs:
         - name: SSH Remote Commands
           uses: appleboy/ssh-action@v0.1.4
           with:
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}      
             script: |
               echo 'Here is some code'
               cd /home/cd-project/

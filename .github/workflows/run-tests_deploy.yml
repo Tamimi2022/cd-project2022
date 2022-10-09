@@ -23,13 +23,12 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: SSH Remote Commands
-          uses: appleboy/ssh-action@v0.1.4
+          uses: actions/checkout@v2
           with:
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
             password: ${{ secrets.PASSWORD }}
             script: |
-              echo 'Here is some code'
               cd /home/cd-project/
               echo 'Bash is just a programming language, really.'
               git pull

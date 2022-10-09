@@ -30,8 +30,8 @@ jobs:
             key: ${{ secrets.KEY }}
             port: ${{ secrets.PORT }}
             script: |
-              echo 'Welcome to my server'
-              cd /home/cd-project
-              echo 'Now in home/cd-project'
+              echo 'Here is some code'
+              cd /home/cd-project/
+              echo 'Bash is just a programming language, really.'
               git pull
               systemctl restart my-application

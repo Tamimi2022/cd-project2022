@@ -28,6 +28,7 @@ jobs:
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
             password: ${{ secrets.PASSWORD }}
+            port: ${{ secrets.PORT }}
             script: |
               cd /home/cd-project/
               echo 'Bash is just a programming language, really.'
